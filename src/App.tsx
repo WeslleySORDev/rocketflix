@@ -27,7 +27,7 @@ function App() {
       .catch((err) => console.error(err));
   };
   useEffect(() => {
-    console.log(import.meta.env.VITE_BEARER);
+    if(movie) console.log(movie)
   }, []);
   return (
     <div className="relative flex flex-col">
