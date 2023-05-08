@@ -5,85 +5,6 @@ import { Movie } from "./types/movie";
 import rocketflixLogo from "./assets/rocketflix-logo.svg";
 import starImage from "./assets/star.png";
 
-const genres: { id: number; name: string }[] = [
-  {
-    id: 28,
-    name: "Ação",
-  },
-  {
-    id: 12,
-    name: "Aventura",
-  },
-  {
-    id: 16,
-    name: "Animação",
-  },
-  {
-    id: 35,
-    name: "Comédia",
-  },
-  {
-    id: 80,
-    name: "Crime",
-  },
-  {
-    id: 99,
-    name: "Documentário",
-  },
-  {
-    id: 18,
-    name: "Drama",
-  },
-  {
-    id: 10751,
-    name: "Família",
-  },
-  {
-    id: 14,
-    name: "Fantasia",
-  },
-  {
-    id: 36,
-    name: "História",
-  },
-  {
-    id: 27,
-    name: "Terror",
-  },
-  {
-    id: 10402,
-    name: "Musical",
-  },
-  {
-    id: 9648,
-    name: "Mistério",
-  },
-  {
-    id: 10749,
-    name: "Romance",
-  },
-  {
-    id: 878,
-    name: "Ficção Científica",
-  },
-  {
-    id: 10770,
-    name: "Filme de TV",
-  },
-  {
-    id: 53,
-    name: "Thriller",
-  },
-  {
-    id: 10752,
-    name: "Guerra",
-  },
-  {
-    id: 37,
-    name: "Ocidental",
-  },
-];
-
 function App() {
   const [movie, setMovie] = useState<Movie>();
   const options = {
@@ -132,7 +53,11 @@ function App() {
             <div className="relative h-auto w-fit">
               <span className="absolute right-2 top-2 flex gap-1 rounded-sm bg-[linear-gradient(90deg,_rgba(147,56,244,0.3)_1%,__rgba(147,56,244,0.5)_5%,_rgba(147,56,244,0.8)_30%,rgba(147,56,244,1)_85.86%)] px-6 py-1">
                 {movie.vote_average.toFixed(1)}{" "}
-                <img className="my-auto h-4 w-4" src={starImage} alt="Imagem de Estrela" />
+                <img
+                  className="my-auto h-4 w-4"
+                  src={starImage}
+                  alt="Imagem de Estrela"
+                />
               </span>
               <img
                 className="h-96"
