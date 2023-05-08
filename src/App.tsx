@@ -8,8 +8,7 @@ function App() {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlOGFlZmJiNzkxZGFhMTZlMjE5YTk2OTM3OWJhMDY3ZSIsInN1YiI6IjYzNTg0YWYzNDJmMTlmMDA3ZjczMjM0OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mob1f2fPHg-pXxTt9yBQgsFs04NODQDLi6dtIdbZbgU",
+      Authorization: import.meta.env.VITE_BEARER,
     },
   };
   const getNewMovie = async () => {
