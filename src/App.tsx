@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import rocketflixLogo from "./assets/rocketflix-logo.svg";
 import { Movie } from "./types/movie";
 
@@ -26,6 +26,9 @@ function App() {
       })
       .catch((err) => console.error(err));
   };
+  useEffect(() => {
+    console.log(import.meta.env.VITE_BEARER);
+  }, []);
   return (
     <div className="relative flex flex-col">
       <header className="flex flex-col items-center gap-2">
